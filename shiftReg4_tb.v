@@ -3,13 +3,13 @@
 module shiftReg4_tb();
 
 reg clk;
-wire s_in;
+reg s_in;
 wire s_out;
 
 shiftReg4 sr4(
-  .shiftIn(s_in),
+  .shift_in(s_in),
   .clock(clk),
-  .shiftOut(s_out)
+  .shift_out(s_out)
 );
 
 always begin
@@ -31,7 +31,7 @@ initial begin
   #50 s_in = 0;
   #60 s_in = 1;
   #70 s_in = 0;
-  #40 $finish
+  #40 $finish;
 end
   
 endmodule
