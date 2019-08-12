@@ -27,10 +27,10 @@ initial begin
   s_in = 0;
   #10 s_in = 1;
   #10 s_in = 0;
-  #40 s_in = 1;
-  #50 s_in = 0;
-  #60 s_in = 1;
-  #70 s_in = 0;
+  #10 s_in = 1;
+  #10 s_in = 0;
+  #10 s_in = 1;
+  #10 s_in = 0;
   #40 $finish;
 end
   
