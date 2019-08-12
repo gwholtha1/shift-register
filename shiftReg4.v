@@ -2,7 +2,7 @@ module shiftReg4(
   input shift_in,
   input clock,
   output shift_out
-)
+);
 
 reg bit0;
 reg bit1;
